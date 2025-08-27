@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Döviz-Kur</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+        
+    <main class="main-container">
+        <header class="input-container">
+            
+            <h1>Currency Converter</h1>
+            <input class="enter-input" placeholder="Enter Amount" type="text">
+
+            <div class="select-with-flag">
+    <select class="from-input">
+        <option value="" selected hidden>From</option>
+        
+    </select>
+</div>
+
+            <button id="swap-btn" class="swap-btn">
+                <i class="fa-solid fa-repeat "></i></button>
+            
+           <div class="select-with-flag">
+    <select class="to-input">
+        <option value="" selected hidden>To</option>
+        
+    </select>
+</div>
+            <input class="cnc-input" placeholder="conclusion" type="text" readonly>
+            <button class="search-btn">Get Exchange Rate</button>
+        </header>
+
+        <select class="drapdown">
+            <option selected hidden>Select time period...</option>
+            <option>Daily</option>
+            <option>Weekly</option>
+            <option>Monthly</option>
+            <option>Annual</option>
+        </select>
+
+        <div class="chart-wrap">
+            <canvas id="rateChart"></canvas>
+        </div>
+  
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="chart.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
